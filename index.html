@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗓️ Mi Calendario 2026 | Recordatorios</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Usaremos Google Fonts para un toque más profesional y amigable -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado y Selector de Año -->
+        <header>
+            <h1>🗓️ Calendario de Eventos 2026</h1>
+            <p class="subtitle">Organiza tu vida, ¡evento por evento!</p>
+        </header>
+
+        <!-- Formulario para añadir eventos -->
+        <div class="form-card">
+            <h2>+ Añadir Nuevo Evento</h2>
+            <form id="eventForm">
+                <div class="input-group">
+                    <label for="fechaEvento">Fecha:</label>
+                    <input type="date" id="fechaEvento" required value="2026-12-25"> <!-- Default para el año solicitado -->
+                </div>
+
+                <div class="input-group">
+                    <label for="horaEvento">Hora (Opcional):</label>
+                    <input type="time" id="horaEvento">
+                </div>
+
+                <div class="input-group">
+                    <label for="tituloEvento">Título del Evento:</label>
+                    <input type="text" id="tituloEvento" placeholder="Ej: Cumpleaños de Ana" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="descripcionEvento">Descripción:</label>
+                    <textarea id="descripcionEvento" rows="3" placeholder="Detalles importantes del evento..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-save">Guardar Evento 💾</button>
+            </form>
+        </div>
+        
+        <!-- Sección de Visualización de Eventos -->
+        <div class="list-card">
+            <h2>📅 Mis Recordatorios Guardados</h2>
+            <div id="eventListings" class="event-list">
+                <!-- Aquí JavaScript insertará los eventos guardados -->
+                <p id="noEventsMsg">Aún no tienes ningún evento registrado. ¡Empieza a añadir uno!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,145 @@
+/* --- BASE STYLES (Estilos Base) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa; /* Fondo muy claro, agradable */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #a9d6ff; /* Azul pastel amigable */
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #1e88e5; /* Azul más fuerte para el título */
+}
+
+.subtitle {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+
+/* --- FORMULARIO (Input) --- */
+.form-card, .list-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.form-card h2, .list-card h2 {
+    color: #1e88e5;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group input[type="date"], 
+.input-group input[type="time"],
+.input-group input[type="text"],
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Botón de Guardar */
+.btn-save {
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50; /* Verde éxito, amigable */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+}
+
+.btn-save:hover {
+    background-color: #459e4b;
+}
+
+
+/* --- LISTA DE EVENTOS (Resultados) --- */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre eventos */
+}
+
+.event-card {
+    background-color: #e3f2fd; /* Fondo azul muy claro para los eventos */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-left: 6px solid #1e88e5; /* Línea lateral distintiva */
+}
+
+.event-card h4 {
+    margin-top: 0;
+    color: #d32f2f; /* Rojo suave para el título principal del evento */
+}
+
+.event-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Botón de eliminar */
+.btn-delete {
+    float: right;
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .card-container, .form-card, .list-card {
+        padding: 20px;
+    }
+}
+
